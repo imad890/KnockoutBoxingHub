@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <link rel="website icon" type="png" href="img/logo.png">
+   <meta charset="utf-8">
+   <meta name="description" content="Página web Imad">
+   <meta name="keywords" content="HTML5, web, página">
+   <meta name="author" content="Imad El Rhinaoui">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="misestilos.css">
+   <title>KnockoutBoxingHub</title>
+</head>
+
+<body>
+   <header>
+      <h1>Contacto KnockoutBoxingHub</h1>
+   </header>
+
+   <nav>
+      <hr>
+      <div class="button"><a href="index.html">Principal</a></div>
+      <div class="button"><a href="acercade.html">Acerca de</a></div>
+      <div class="button"><a href="contacto.html">Contacto</a></div>
+      <hr>
+   </nav>
+
+   <main>
+      <section>
+         <h2>Formulario para unirse al club</h2>
+         <article>
+            <form method="post" action="yes">
+               <fieldset>
+                  <legend>Datos personales</legend>
+                  <table>
+                     <tr>
+                        <td><label for="nombre" value="nombre">Nombre:</label></td>
+                        <td><label for="apellido">Apellidos:</label></td>
+                        <td><label for="dni">DNI</label></td>
+                     </tr>
+                     <tr>
+                        <td><input type="text" name="Nombre" id="nombre" value="Nombre" required><br></td>
+                        <td><input type="text" name="apellidos" id="apellido" value="Apellidos" required></td>
+                        <td><input type="text" name="dni" id="dni"></td>
+                     </tr>
+                     <tr>
+                        <td><label for="location">Localidad de Nacimiento:</label></td>
+                        <td><label for="provincia">Provincia:</label></td>
+                        <td><label for="nac">Fecha de Nacimiento</label></td>
+                     </tr>
+                     <tr>
+                        <td><input type="text" name="location" id="location"></td>
+                        <td>
+                           <select id="provincia" name="provinica">
+                              <option value="Alicante" selected>Alicante</option>
+                              <option value="Murcia">Murcia</option>
+                              <option value="Nomore">Ya no hay más provincias</option>
+                           </select>
+                        </td>
+                        <td><input type="date" name="nac" id="nac"></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2"><label for="direc">Dirección</label></td>
+                        <td><label for="post">Código Postal</label></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2"><textarea name="direc" id="direc" cols="40" rows="1"></textarea></td>
+                        <td><input type="text" name="post" id="post"></td>
+                     </tr>
+
+
+
+                  </table>
+                  <button type="submit" name="enviar">Enviar solicitud para unirse al club</button><br>
+               </fieldset>
+
+         </article>
+      </section>
+      <section>
+         <h2>Realizar pedido</h2>
+         <article>
+            <p> Tienda:
+               <input type="text" name="tienda" value="Callosa de Segura" readonly="readonly" />
+            </p>
+
+            <fieldset>
+               <legend accesskey="1">1. Datos del cliente </legend>
+               Nombre:
+               <input type="text" name="nombre" />
+               Clave
+               <input type="password" name="clave" /><br /><br />
+               Dirección de envío:
+               <input type="text" name="envio" size="50" /><br><br>
+               Correo electrónico:
+               <input type="text" name="correo" size="30" />
+               Teléfono:
+               <input type="text" name="telefono" size="9" maxlength="9" />
+            </fieldset>
+
+            <fieldset>
+               <legend accesskey="2">2. Datos del pedido </legend>
+               Indique la cantidad:
+               <select name="num" size="1">
+                  <option selected="selected">1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+               <br />
+
+               Seleccione los articulos deseados:
+               <input type="checkbox" name="pc" value="GUANTES" />Guantes de boxeo
+               <input type="checkbox" name="pc" value="VENDAS" />Vendas de boxeo
+               <input type="checkbox" name="pc" value="CASCO" checked="checked" />Casco de boxeo
+               <input type="checkbox" name="pc" value="BUCAL" />Bucal<br /><br />
+               Seleccione opciones de envío
+               <select name="envío" multiple="multiple" size="2">
+                  <option>Envío a domicilio</option>
+                  <option>Envío a oficina de correos</option>
+                  <option>Recogida en tienda</option>
+               </select>
+            </fieldset>
+
+            <fieldset>
+               <legend accesskey="3">3. Otros datos de envío</legend>
+               Seleccione método de pago:
+               <input type="radio" name="opcion[]" value="Tarjeta" checked="checked" />Tarjeta de débito/crédito
+               <input type="radio" name="opcion[]" value="bizum" />Bizum
+               <input type="radio" name="opcion[]" value="paypal" />Paypal
+               <input type="radio" name="opcion[]" value="plazos" />Pago a plazos<br />
+               Observaciones:
+               <textarea name="obser" cols="60" rows="3" maxlength="150">Observaciones</textarea>
+            </fieldset>
+
+
+            <button name="enviar" value="enviar" type="submit">
+               Hacer pedido
+            </button>
+
+            <button name="borrar" value="borrar" type="reset">
+               Borrar datos
+            </button>
+
+            </form>
+         </article>
+      </section>
+   </main>
+   <aside>
+      <h3>Más sobre boxeo</h3>
+      <ul>
+         <li><a href="https://marxial.pe/blogs/articulos/como-evitar-lesionarse-practicando-boxeo" target="_blank"
+               class="transicion">Cómo practicar boxeo de forma segura</a></li>
+         <li><a href="https://es.wikipedia.org/wiki/Boxeo" target="_blank" class="transicion">Historia del boxeo</a>
+         </li>
+         <li><a href="https://www.sportingnews.com/es/boxeo/news/calendario-boxeo-2024-dia-fecha-peleas-resultados/7eeea946419de47250d3d69b"
+               target="_blank" class="transicion">Calendario del boxeo 2024</a></li>
+         <li><a href="https://www.espn.com/boxing/" target="_blank" class="transicion">Noticias del boxeo</a></li>
+      </ul>
+   </aside>
+
+   <footer>
+      <small>Página web diseñada por Imad El Rhinaoui</small>
+   </footer>
+</body>
+
+</html>

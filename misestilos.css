@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+header {
+    color: Red;
+    padding: 10px;
+    margin: 0;
+    background-color: Black;
+    text-align: center;
+    border-bottom: 1px solid Red;
+}
+
+h2,
+h3 {
+    text-align: center;
+    text-decoration: solid;
+    color: black;
+}
+
+nav {
+    background-color: Black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+article {
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: DarkSlateGray;
+    padding: 5px;
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: Black;
+    color: Gold;
+    border-style: inset;
+    border-width: 5px;
+    border-color: Red;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    width: fit-content;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: Gold;
+    color: Black;
+    border-color: Black;
+}
+
+.transicion {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: Black;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+.transicion:hover {
+    background-color: Black;
+    color: Red;
+    border-color: Red;
+}
+
+#imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imagenes img {
+    width: 30%;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "h h h h"
+        "n n n n"
+        "m m m a"
+        "m m m a"
+        "f f f f";
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+main {
+    grid-area: m;
+    background-color: orange;
+}
+
+aside {
+    grid-area: a;
+    background-color: Red;
+}
+
+footer {
+    grid-area: f;
+    background-color: DarkSlateGray;
+    text-align: center;
+}
+
+#productos table {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    justify-content: center;
+    padding: 8px;
+}
+
+pre {
+    text-align: center;
+    letter-spacing: 4px;
+    text-indent: 15px;
+    font-family: 'Comic Sans MS';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-image: url(img/imagen.png);
+}
+
+ul img {
+    height: 3px;
+}
+a:link{
+    color:green;
+}
+a:visited{
+    color:blue;
+}
+a:focus{
+    color:orangered;
+}
+a:active{
+    color:orchid;
+}
+p::first-letter{
+    color:rgb(139, 0, 0);
+    text-decoration: solid;
+}
